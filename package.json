@@ -1,7 +1,7 @@
 {
-  "name": "greenhouse-gas",
-  "version": "1.0.2",
-  "description": "A Greenhouse Gas Equivalency Calculator",
+  "name": "greenhouse-gas-international",
+  "version": "1.0.1",
+  "description": "A Greenhouse Gas Equivalency Calculator (international)",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dynamix-Energy-Services/greenhouse-gas.git"
+    "url": "git+https://github.com/energychain/greenhouse-gas.git"
   },
   "keywords": [
     "co2",
@@ -20,7 +20,7 @@
     "gas",
     "energy"
   ],
-  "author": "Herman Singh",
+  "author": "STROMDAO GmbH",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dynamix-Energy-Services/greenhouse-gas/issues"

@@ -133,10 +133,12 @@ function calculateC02(kwh) {
   return ConversionFactors.electricity.value * kwh;
 }
 
-function calculateEquivalency(kwh, options) {
+function calculateEquivalency(kwh, options,co2) {
   const opts = options || {};
   const keyList = opts.keyList || Object.keys(EmissionFactors);
-  const co2 = calculateC02(kwh);
+  if((typeof co2 == 'undefined') || (co2 == null)) {
+   co2 = calculateC02(kwh);
+  }
   return keyList.map((key) => {
     const conversion = EmissionFactors[key];
     return {
